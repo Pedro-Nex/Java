@@ -11,7 +11,7 @@ public class Exercicio01{
 		venda = venda + "\nCategoria: " + categoria + ".";
 		venda = venda + "\nQuantidade: " + quant + ".";
 		venda = venda + "\nValor Unitario: R$ " + preco + ".";
-		venda = venda + "\nPreço Total: R$ " + quant * preco + ".";
+		venda = venda + "\nPreço Total: R$ " + String.format("%.2f", quant * preco) + ".";
 		
 		System.out.println(venda);
 		}
