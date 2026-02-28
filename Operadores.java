@@ -57,7 +57,7 @@ public class Operadores{
 		int resto1 = valor1 % valor2;
 		double resto2 = valor1 % valor3;
 		
-		System.out.println("\nO resto:" + valor1 + " % " + valor2 + " = " + resto1);
+		System.out.println("\nO resto: " + valor1 + " % " + valor2 + " = " + resto1);
 		System.out.println("O resto: " + valor1 + " % " + valor3 + " = " + resto2);
 		
 		System.out.println("\n===========================================================\n\n\n");
