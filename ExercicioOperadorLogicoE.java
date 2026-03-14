@@ -10,11 +10,11 @@ public class ExercicioOperadorLogicoE {
         System.out.print("Idade do Aluno: ");
         int idade = scan.nextInt();
         if(idade >= 13 && idade <= 17){
-            System.out.println(nome + ", você é da: Elite do Futebol.");
-        }else if(idade >= 8 && idade < 12){
-            System.out.println(nome + ", você é da: Craque da Bola.");
-        }else if(idade >= 5 && idade < 7){
-            System.out.println(nome + ", você é da: Leõezinhos.");
+            System.out.println(nome + ", você é do grupo: Elite do Futebol.");
+        }else if(idade >= 8 && idade <= 12){
+            System.out.println(nome + ", você é do grupo: Craques da Bola.");
+        }else if(idade >= 5 && idade <= 7){
+            System.out.println(nome + ", você é do grupo: Leõezinhos.");
         }else{
             System.out.println("Idade Inválida para nossos programas.");
         }
