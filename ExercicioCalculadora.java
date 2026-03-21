@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class ExercicioCalculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double total;
+        double total, numero1, numero2;
         System.out.print("\nPrimeiro Número: ");
-        double numero1 = scan.nextDouble();
+        numero1 = scan.nextDouble();
         System.out.print("Segundo Número: ");
-        double numero2 = scan.nextDouble();
+        numero2 = scan.nextDouble();
         System.out.println("=".repeat(50));
         System.out.println("----- Escolha uma opção -----");
         System.out.println("(+) Somar | (-) Subtrair | (*) Multiplicar | (/) Dividir | 0. Sair");
