@@ -1,35 +1,34 @@
-package aula06;
 import java.util.Scanner;
 
 public class ConceitoFinal {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-
         System.out.println("=".repeat(50));
-        System.out.println("***** Escola *****");
+        System.out.println("**** Restaurante São José ****");
         System.out.println("=".repeat(50));
-        System.out.print("Digite o nome do Aluno: ");
-        String nome = scan.nextLine();
-        System.out.print("Digite a média do Aluno: ");
-        double media = scan.nextDouble();
-        System.out.print("Digite a porcentagem de frequência do aluno (Apenas Número): ");
-        int frequencia = scan.nextInt();
-        String conceito = "";
-
-        if (media >= 7.0 && frequencia >= 75){
-            conceito = "Aprovado!";
-        } else if (media >= 5 && media < 7 && frequencia >= 75){
-            conceito = "Recuperação!";
+        System.out.println("Menu de Cumpom");
+        System.out.println("0 - SEM CUPOM");
+        System.out.println("1 - FESTA10");
+        System.out.println("2 - TECH10");
+        System.out.println("3 - BEST10");
+        System.out.println("4 - JOSE19");
+        System.out.println("=".repeat(50));
+        System.out.print("Digite o Valor Total: ");
+        double valorTotal = scan.nextDouble();
+        System.out.print("Digite o númeor do cupom: ");
+        int cupom = scan.nextInt();
+        double desconto = 0.0;
+        double valorPagar = 0.0;
+        if (cupom == 1 || cupom == 2){
+            desconto = valorTotal * 0.05;
+        } else if (cupom == 3 || cupom == 4){
+            desconto = valorTotal * 0.1;
         } else {
-            conceito = "Reprovado!";
+            desconto = 0.0;
         }
-
+        valorPagar = valorTotal - desconto;
         System.out.println("=".repeat(50));
-        System.out.println("***** Relatório Final *****");
-        System.out.println("Nome: " + nome);
-        System.out.println("Média: " + media);
-        System.out.println("Frequeência: " + frequencia + ("%"));
-        System.out.println("Conceito Final: " + conceito);
+        System.out.println("Valor a Pagar: R$ " + String.format("%,.2f", valorPagar));
         System.out.println("=".repeat(50));
         scan.close();
     }
