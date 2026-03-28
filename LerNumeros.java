@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class LerNumeros {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int numero;
+        do {
+            System.out.print("Digite um número. (Digite um número negativo para parar): ");
+            numero = scan.nextInt();
+            System.out.println("Você digitou o número: " + numero);
+        } while (numero >= 0);
+        System.out.println("=".repeat(60));
+        scan.close();
+    }
+}
