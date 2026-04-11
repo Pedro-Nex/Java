@@ -19,7 +19,7 @@ public class Array02 {
 
         for (int i = 0; i < notas.length; i++){
             System.out.print("Digite a " + (i + 1) + "ª Nota: ");
-            notas[1] = scan.nextDouble();
+            notas[i] = scan.nextDouble();
         }
         double somaNotas = 0;
         for (int i = 0; i < notas.length; i++){
