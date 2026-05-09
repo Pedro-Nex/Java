@@ -1,0 +1,48 @@
+package exercicio.poo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		linha();
+		
+		System.out.print("Digite o Titulo do 1° Livro: ");
+		String tituloLivro1 = scan.nextLine();
+		System.out.print("Digite o Nome do Autor do 1° Livro: ");
+		String autorLivro1 = scan.nextLine();
+		System.out.print("Digite o Número de Páginas do 1° Livro: ");
+		int pagsLivro1 = scan.nextInt();
+		scan.nextLine();
+		
+		linha();
+		
+		System.out.print("Digite o Titulo do 2° Livro: ");
+		String tituloLivro2 = scan.nextLine();
+		System.out.print("Digite o Nome do Autor do 2° Livro: ");
+		String autorLivro2 = scan.nextLine();
+		System.out.print("Digite o Número de Páginas do 2° Livro: ");
+		int pagsLivro2 = scan.nextInt();
+		scan.nextLine();
+		
+		linha();
+		
+		Livro liv01 = new Livro (tituloLivro1, autorLivro1, pagsLivro1);
+		Livro liv02 = new Livro (tituloLivro2, autorLivro2, pagsLivro2);
+		
+		liv01.exibirDetalhes();
+		
+		linha();
+		
+		liv02.exibirDetalhes();
+		
+		linha();
+		
+		scan.close();
+	}
+	public static void linha() {
+		System.out.println("=".repeat(50));
+	}
+}
